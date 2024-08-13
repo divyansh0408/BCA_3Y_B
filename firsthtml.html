@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            font-family: 'poppins',sans-serif;
-            text-align: center;
-            background: rgb(67, 121, 133);
+        body {
+            font-family: 'poppins', sans-serif;
+             background: rgb(67, 121, 133);
             font-size: 3.5rem;
             color: white;
         }
+        .left{
+            text-align: right;
+        }
+        .center{
+            text-align: center;
+        }
     </style>
 </head>
-<body>
-    <script src="first.js" >
+
+<body id="mode">
+
+    <div class="left">
+    <button id="mode_chng" onclick="darkmode()">Dark mode</button>
+    <button id="mode_chng" onclick="lightmode()">Light mode</button>
+</div>
+<div class="center">
+    <h1>Simple Calculater </h1>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <select id="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p></div>
+    <!-- <input type="number" id="num1" placeholder="Enter any number">
+<input type="number" id="num2" placeholder="Enter any number">
+
+<select  id="operater">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+</select>
+<button onclick="calculate()">Result</button>
+<p id="result"></p> -->
+
+
+    <!-- 
+<h2 id="demo"></h2>
+<button  onclick="calculate()">Morning</button>
+<button onclick="afternoon()">Afternoon</button>
+<button onclick="evening()">evening</button>
+<button onclick="night()">Night</button>
+ -->
+
+    <script src="first.js">
     </script>
 </body>
+
 </html>
