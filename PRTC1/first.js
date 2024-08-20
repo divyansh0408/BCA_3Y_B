@@ -166,27 +166,104 @@
 
   // document.getElementById("result").innerText = "result:" + result;
 
-  function calculate() {
-    let num1 = parseFloat(document.getElementById("num1").value);
-    let num2 = parseFloat(document.getElementById("num2").value);
-    let operator = document.getElementById("operator").value;
-    let result;
+//   function calculate() {
+//     let num1 = parseFloat(document.getElementById("num1").value);
+//     let num2 = parseFloat(document.getElementById("num2").value);
+//     let operator = document.getElementById("operator").value;
+//     let result;
 
-    if (operator === "add") {
-        result = num1 + num2;
-    } else if (operator === "subtract") {
-        result = num1 - num2;
-    } else if (operator === "multiply") {
-        result = num1 * num2;
-    } else if (operator === "divide") {
-        result = num1 / num2;
-    }
+//     if (operator === "add") {
+//         result = num1 + num2;
+//     } else if (operator === "subtract") {
+//         result = num1 - num2;
+//     } else if (operator === "multiply") {
+//         result = num1 * num2;
+//     } else if (operator === "divide") {
+//         result = num1 / num2;
+//     }
 
-    // document.getElementById("result").innerText = "Result: " + result;
-    document.getElementById("result").innerHTML = `<h1>Result: ${result}</h1>`
+//     // document.getElementById("result").innerText = "Result: " + result;
+//     document.getElementById("result").innerHTML = `<h1>Result: ${result}</h1>`
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  function darkmode() {
+  
+//   document.getElementById("mode").style.background="black"
+//   document.getElementById("mode").style.color="grey"
+//  }
+//  function lightmode() {
+  
+//   document.getElementById("mode").style.background="White"
+//   document.getElementById("mode").style.color="black"
+//  }
+// // }
+// // function evening()
+// // {
+// //   document.getElementById("demo").innerHTML="Good Evening";
+
+// // }
+// // function night()
+// // {
+// //   document.getElementById("demo").innerHTML="Good Night";
+
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let student ={
+//     fname:"Divyansh",
+//     id:101,
+//     age:20,
+
+// }
+
+
+// document.write(student.id,"<br>")
+// document.write(student.fname,"<br>");
+// document.write(student.age,"<br>");
+
+let student ={
+    fname:"Divyansh",
+    id:101,
+    age:20,
+
 }
 
 
+let{fname,id,age}=student;
+
+document.write(fname,"<br>");
+document.write(age,"<br>");
+document.write(id,"<br>")
 
 
 
@@ -194,29 +271,13 @@
 
 
 
+//update
+student.id=507
+console.log(student['id']);
+delete student.id
+console.log(student['id']);
 
 
-
-
-
- function darkmode() {
-  
-  document.getElementById("mode").style.background="black"
-  document.getElementById("mode").style.color="grey"
- }
- function lightmode() {
-  
-  document.getElementById("mode").style.background="White"
-  document.getElementById("mode").style.color="black"
- }
-// }
-// function evening()
-// {
-//   document.getElementById("demo").innerHTML="Good Evening";
-
-// }
-// function night()
-// {
-//   document.getElementById("demo").innerHTML="Good Night";
-
-// }
+student={}
+delete student  
+console.log(student)
